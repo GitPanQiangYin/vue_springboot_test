@@ -1,0 +1,29 @@
+<template>
+  <el-container>
+    <el-aside style="width: 300px;margin-top: 20px">
+      <switch></switch>
+      <SideMenu></SideMenu>
+    </el-aside>
+    <el-main>
+      <books></books>
+    </el-main>
+  </el-container>
+</template>
+
+<script>
+  import SideMenu from './SideMenu'
+  import books from './Books'
+  export default {
+    name: 'AppLibrary',
+    components: {SideMenu,books}
+  }
+</script>
+
+<style scoped>
+ .books-area {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
